@@ -1,0 +1,105 @@
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Client Swiper Section -->
+<div class="client__swiper">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="client__card">
+          <p>FoodMan's culinary expertise never fails to impress!</p>
+          <img src="client-1.jpg" alt="client" />
+          <h4>David Lee</h4>
+          <h5>Business Executive</h5>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client__card">
+          <p>I always turn to FoodMan for a quick and delicious meal.</p>
+          <img src="client-2.jpg" alt="client" />
+          <h4>Emily Johnson</h4>
+          <h5>Food Blogger</h5>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="client__card">
+          <p>FoodMan has become my go-to for catering needs.</p>
+          <img src="client-3.jpg" alt="client" />
+          <h4>Michael Thompson</h4>
+          <h5>Event Planner</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<div class="client__swiper">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <p>
+              FoodMan's culinary expertise never fails to impress! Every
+              dish is a masterpiece, bursting with flavor and freshness.
+            </p>
+            <img src="client-1.jpg" alt="client" />
+            <h4>David Lee</h4>
+            <h5>Business Executive</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <p>
+              I always turn to FoodMan for a quick and delicious meal. Their
+              efficient service and mouthwatering options never disappoint!
+            </p>
+            <img src="client-2.jpg" alt="client" />
+            <h4>Emily Johnson</h4>
+            <h5>Food Blogger</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <p>
+              FoodMan has become my go-to for all my catering needs. Their
+              attention to detail and exceptional customer service make
+              every event a success.
+            </p>
+            <img src="client-3.jpg" alt="client" />
+            <h4>Michael Thompson</h4>
+            <h5>Event Planner</h5>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>

@@ -1,0 +1,8 @@
+
+#hoverText {
+  padding: 10px;
+  color: black;
+}
+#hoverText:hover {
+  color: red;
+}
